@@ -1,0 +1,146 @@
+.flash-box{
+  background-color: #38aef0;
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  color: white;
+}
+.wrapper{
+  .chat-side{
+    width: 300px;
+    float: left;
+    height: 871px;
+    background-color: #2f3e51;
+    .header-text{
+      height: 100px;
+      background-color: #253141;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      &__box{
+        display: flex;
+        width: 100%;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        justify-content: space-between;
+        &__box__menu{
+          display: flex;
+          .fa{
+            margin-left: 0.3rem;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+    .groups{
+      height: calc(100vh - 100px);
+      background-color: #2f3e51;
+      color: white;
+      font-weight: bold;
+      padding: 20px 20px 0;
+      .group-name{
+        margin-bottom: 5px;
+      }
+      .group-comment{
+        margin-bottom: 40px;
+      }
+    }
+  .chat-main{
+    width: calc(100vw - 300px);
+    float: left;
+    .main-header{
+      height: 100px;
+      padding: 0 40px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+      &__left-box{
+        margin-top: 35px;
+        &__current-group{
+          font-size: 20px;
+          color: #333;
+          margin-bottom: 15px;
+        }
+        &__member-list{
+          font-size: 12px;
+        }
+      }
+      &__edit-btn{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-top: 30px;
+        border: solid 1px #38aef0;
+        color: #38aef0;
+        position: absolute;
+        right: 40px;
+      }
+    }
+    .messages{
+      height: calc(100vh - 190px);
+      padding: 46px 40px;
+      background-color: #fafafa;
+      .message{
+        padding-bottom: 40px;
+        &__upper-info{
+          display: flex;
+          margin-bottom: 10px;
+          &__talker{
+            color: #434a54;
+            font-size: 16px;
+            font-weight: bold;
+          }
+          &__date{
+            color: #999999;
+            font-size: 12px;
+            margin-left: 10px;
+          }
+        }
+        &__text{
+          color: #434a54;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .form{
+      height: 90px;
+      padding: 20px 40px;
+      background-color: #ddd;
+      .new_message{
+        display: flex;
+        .input-box{
+          position: relative;
+          width: 100%;
+          &__text{
+            height: 50px;
+            width: 100%;
+            padding: 0 0 0 10px;
+            color: #434a54;
+            border-style: none;
+          }
+          &__image{
+            font-size: 1.3rem;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            .message_image.input-box__image__file{
+              display: none;
+            }
+          }
+        }
+        .submit-btn{
+          width: 100px;
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          background-color: #38aef0;
+          color: white;
+
+        }
+      }
+    }
+  }
+}
