@@ -17,14 +17,14 @@
       display: flex;
       align-items: center;
       padding: 0 20px;
-      .header-text__box{
+      &__box{
         display: flex;
         width: 100%;
         font-weight: bold;
         font-size: 16px;
         color: white;
         justify-content: space-between;
-        .header-text__box__box__menu{
+        &__box__menu{
           display: flex;
           .fa{
             margin-left: 0.3rem;
@@ -56,18 +56,18 @@
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid #eee;
-      .main-header__left-box{
+      &__left-box{
         margin-top: 35px;
-        .main-header__left-box__current-group{
+        &__current-group{
           font-size: 20px;
           color: #333;
           margin-bottom: 15px;
         }
-        .main-header__left-box__member-list{
+        &__member-list{
           font-size: 12px;
         }
       }
-      .main-header__edit-btn{
+      &__edit-btn{
         height: 40px;
         line-height: 40px;
         padding: 0 20px;
@@ -84,21 +84,21 @@
       background-color: #fafafa;
       .message{
         padding-bottom: 40px;
-        .message__upper-info{
+        &__upper-info{
           display: flex;
           margin-bottom: 10px;
-          .message__upper-info__talker{
+          &__talker{
             color: #434a54;
             font-size: 16px;
             font-weight: bold;
           }
-          .message__upper-info__date{
+          &__date{
             color: #999999;
             font-size: 12px;
             margin-left: 10px;
           }
         }
-        .message__text{
+        &__text{
           color: #434a54;
           font-size: 14px;
           margin-bottom: 10px;
@@ -114,14 +114,14 @@
         .input-box{
           position: relative;
           width: 100%;
-          .input-box__text{
+          &__text{
             height: 50px;
             width: 100%;
             padding: 0 0 0 10px;
             color: #434a54;
             border-style: none;
           }
-          .input-box__image{
+          &__image{
             font-size: 1.3rem;
             position: absolute;
             top: 10px;
