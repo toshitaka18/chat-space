@@ -2,31 +2,24 @@
   グループを作成しました
 .wrapper
   .chat-side
-    .header-text
-      .header-text__box
-        %p.header-text__box__user-name
-          test-user
-        %ul.header-text__box__box__menu
-          .header-text__box__box__menu__new-group
-          = link_to ' ' do
-            = fa_icon 'edit'
-          .header-text__box__box__menu__edit-user
-          = link_to ' ' do
-            = fa_icon 'cog'
+    .header
+      %h3.header__name
+        = current_user.name
+      %ul.header__lists
+        %li.list
+          = link_to new_group_path do
+            = fa_icon 'pencil-square-o', class: 'icon'
+        %li.list
+          = link_to edit_user_path(current_user) do
+            = fa_icon 'cog', class: 'icon'
     .groups
-      .group
-        %p.group-name
-          test-group
-        %p.group-comment
-          さようなら
-        %p.group-name
-          sample-group
-        %p.group-comment
-          hello!
-        %p.group-name
-          example
-        %p.group-comment
-          まだメッセージがありません
+      - current_user.groups.each do |group|
+        .group
+          = link_to '#' do
+            .group__name
+              = group.name
+            .group__message
+              メッセージはまだありません。
   .chat-main
     .main-header
       .main-header__left-box
