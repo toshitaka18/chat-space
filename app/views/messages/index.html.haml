@@ -30,27 +30,13 @@
       .main-header__edit-btn
         EDIT
     .messages
-      .message
-        .message__upper-info
-          %p.message__upper-info__talker
-            test-user
-          %p.message__upper-info__date
-            2019/01/01/00:00:00:00
-        %p.message__text
-          こんにちは！
-        .message__upper-info
-          %p.message__upper-info__talker
-            test-user
-          %p.message__upper-info__date
-            2019/01/01/00:00:00:00
-        %p.message__text
-          さようなら
+      = render @messages
     .form
-      %form.new_message
-        .input-box
-          %input.input-box__text{placeholder: "type a message"}
-          %label.input-box__image{for: "message-image"}
-            = fa_icon 'image'
-            %input.message_image.input-box__image__file{name: "message[image]", type: "file"}
-        %input.submit-btn{type: "submit", value: "Send"}
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = fa_icon 'picture-o', class: 'icon'
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'
         
