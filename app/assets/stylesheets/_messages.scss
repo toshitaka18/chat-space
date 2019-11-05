@@ -26,10 +26,9 @@
         color: white;
         justify-content: space-between;
       &__lists{
-        display: inline-block;
-        float: right;
+        display: flex;
         .list{
-          display: inline-block;
+          display: flex;
           }
         .icon{
           color: white;
@@ -42,15 +41,17 @@
     .groups{
       height: calc(100vh - 100px);
       background-color: #2f3e51;
-      font-weight: bold;
       padding: 20px 20px 0;
+      overflow: scroll;
       .group__name{
         margin-bottom: 5px;
         color: white;
+        text-decoration: none;
       }
       .group__message{
         margin-bottom: 40px;
         color: white;
+        text-decoration: none;
       }
     }
   .chat-main{
