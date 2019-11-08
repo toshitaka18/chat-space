@@ -61,6 +61,7 @@ gem 'rails-i18n', '~> 5.1'
 gem 'haml-rails'
 gem 'erb2haml'
 gem 'carrierwave'
+gem 'fog-aws'
 gem 'mini_magick'
 
 group :production do
