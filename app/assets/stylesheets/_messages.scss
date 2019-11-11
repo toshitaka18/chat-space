@@ -10,8 +10,8 @@
   .chat-side{
     width: 300px;
     float: left;
-    height: 820px;
     background-color: #2f3e51;
+    box-sizing: border-box;
     .header{
       height: 100px;
       background-color: #253141;
@@ -57,7 +57,7 @@
   .chat-main{
     width: calc(100vw - 300px);
     float: left;
-    height: 820px;
+    box-sizing: border-box;
     .main-header{
       height: 100px;
       padding: 0 40px;
